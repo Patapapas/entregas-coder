@@ -44,10 +44,10 @@ html {
     align-self: center;
 
     /* Animacion */
-    /* animation-name: titulo;
+    animation-name: titulo;
     animation-iteration-count: initial;
     animation-timing-function: ease-in;
-    animation-duration: 1s; */
+    animation-duration: 1s;
 }
 .menu li{
     display: inline-block;
@@ -55,10 +55,10 @@ html {
     padding: 0px 10px;
     font-family: CabinetGrotesk-Variable;
 }
-/* .menu li:hover a {
+.menu li:hover a {
     color: white;
     width: 200px;
-} */
+}
 .menu li a {
     text-decoration: none;
     color: black;
@@ -110,7 +110,7 @@ html {
 }
 /* BODY NOSOTROS */
 
-/* @keyframes slide {
+@keyframes slide {
     from {
     margin-left: 100%;
     width: 300%;
@@ -119,7 +119,7 @@ html {
     margin-left: 0%;
     width: 100%;
     }
-} */
+}
 
 .nosotros {
     margin: 10px;
@@ -133,8 +133,8 @@ html {
     text-align: center;
     overflow: hidden;
     /* ANIMACION */
-    /* animation-duration: 3s;
-    animation-name: slide; */
+    animation-duration: 3s;
+    animation-name: slide;
 }
 
 .nosotros__textoDos {
@@ -145,8 +145,8 @@ html {
     align-self: center;
     font-size: 30px;
     /* ANIMACION */
-    /* animation-duration: 3s;
-    animation-name: slide; */
+    animation-duration: 3s;
+    animation-name: slide;
 }
 
 
