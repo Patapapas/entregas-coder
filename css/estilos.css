@@ -3,39 +3,59 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     font-size: 62.5%;
 }
+
 @font-face {
     font-family: 'CabinetGrotesk-Variable';
     src: url('../fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
         url('../fonts/CabinetGrotesk-Variable.woff') format('woff'),
         url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
 }
+
 /* HEADER */
 
-.header{
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(252,213,206,1) 100%);
+.header {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(252, 213, 206, 1) 100%);
     display: grid;
     grid-template-columns: .25fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: 
-    "logo menu"
+    grid-template-areas:
+        "logo menu"
     ;
 }
+
 .logo {
     grid-area: logo;
     margin: 20px 10px;
     width: 100px;
 }
+
 @keyframes titulo {
-    0% {font-size: 20px;}
-    25%{font-size: 15px;}
-    50%{font-size: 10px;}
-    75%{font-size: 15px;}
-    100%{font-size: 20px;}
+    0% {
+        font-size: 20px;
+    }
+
+    25% {
+        font-size: 15px;
+    }
+
+    50% {
+        font-size: 10px;
+    }
+
+    75% {
+        font-size: 15px;
+    }
+
+    100% {
+        font-size: 20px;
+    }
 }
+
 .navegacion {
     padding-right: 50px;
     grid-area: menu;
@@ -49,83 +69,94 @@ html {
     animation-timing-function: ease-in;
     animation-duration: 1s;
 }
-.menu li{
+
+.menu li {
     display: inline-block;
     font-size: 20px;
     padding: 0px 10px;
     font-family: CabinetGrotesk-Variable;
 }
+
 .menu li:hover a {
     color: white;
     width: 200px;
 }
+
 .menu li a {
     text-decoration: none;
     color: black;
-    
+
 }
 
 /* BODY */
 
-.contenido{ 
+.contenido {
     text-align: center;
-    font-family:CabinetGrotesk-Variable;
+    font-family: CabinetGrotesk-Variable;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "video"
-    "mujer"
-    "hombre"
+    grid-template-areas:
+        "video"
+        "mujer"
+        "hombre"
     ;
 }
-.contenido a{
+
+.contenido a {
     color: black;
-    font-family:CabinetGrotesk-Variable;
+    font-family: CabinetGrotesk-Variable;
     text-decoration: none;
 }
-.contenido__video{
+
+.contenido__video {
     grid-area: video;
     margin: 10px;
 }
 
-.animate__animated animate__bounce{
+.animate__animated animate__bounce {
     --animate-duration: 5s;
 }
+
 .contenido__mujeres {
     margin: 10px;
     grid-area: mujer;
     font-size: 20px;
 }
-.contenido__mujeres li{
+
+.contenido__mujeres li {
     display: inline;
 }
 
-.contenido__hombres{
+.contenido__hombres {
     margin: 10px;
     font-size: 20px;
 }
-.contenido__hombres li{
+
+.contenido__hombres li {
     display: inline;
 }
+
 /* BODY NOSOTROS */
 
 @keyframes slide {
     from {
-    margin-left: 100%;
-    width: 300%;
+        margin-left: 100%;
+        width: 300%;
     }
+
     to {
-    margin-left: 0%;
-    width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
 }
 
 .nosotros {
     margin: 10px;
-    font-family:CabinetGrotesk-Variable;
+    font-family: CabinetGrotesk-Variable;
     display: flex;
 }
+
 .nosotros__texto {
     justify-self: center;
     align-self: center;
@@ -139,7 +170,7 @@ html {
 
 .nosotros__textoDos {
     margin: 10px;
-    font-family:CabinetGrotesk-Variable;
+    font-family: CabinetGrotesk-Variable;
     text-align: center;
     justify-self: center;
     align-self: center;
@@ -154,38 +185,42 @@ html {
 /* FOOTER */
 
 .footer {
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(252,213,206,1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(252, 213, 206, 1) 100%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: 
-    "redes categorias"
+    grid-template-areas:
+        "redes categorias"
     ;
 }
+
 .footer__redes {
     grid-area: redes;
     padding-left: 15px;
     font-size: 20px;
     color: black;
-    font-family:CabinetGrotesk-Variable;
+    font-family: CabinetGrotesk-Variable;
 }
 
 .footer__redes a {
     padding: 1px 0px;
     font-size: 15px;
 }
+
 .footer h3 {
-    font-family:CabinetGrotesk-Variable;
+    font-family: CabinetGrotesk-Variable;
     margin: 0;
 }
+
 .footer a {
     display: block;
     color: black;
     font-size: 15px;
     text-decoration: none;
-    font-family:CabinetGrotesk-Variable;
+    font-family: CabinetGrotesk-Variable;
 }
+
 .footer a:hover {
     color: white;
 }
@@ -196,41 +231,49 @@ html {
     font-family: CabinetGrotesk-Variable;
     font-size: 20px;
 }
+
 .footer__submenu {
     list-style: none;
 }
 
 /* MOVIL */
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
     .logo {
         width: 70px;
     }
+
     .navegacion {
         padding-right: 30px;
         justify-self: end;
     }
+
     .navegacion ul {
         flex-wrap: nowrap;
     }
+
     .navegacion li {
         display: inline;
         font-size: 13px;
         padding: 0px 5px;
     }
-    .footer h3{
+
+    .footer h3 {
         font-size: 10px;
     }
-    .footer a{
+
+    .footer a {
         font-size: 10px;
     }
+
     /* NOSOTROS */
     .nosotros {
         flex-direction: column;
         margin: 10px;
-        font-family:CabinetGrotesk-Variable;
+        font-family: CabinetGrotesk-Variable;
         display: flex;
     }
+
     .nosotros__texto {
         margin: 15px;
         display: block;
@@ -239,16 +282,18 @@ html {
         font-size: 15px;
         text-align: center;
     }
+
     .nosotros__textoDos {
         margin: 15px;
-        font-family:CabinetGrotesk-Variable;
+        font-family: CabinetGrotesk-Variable;
         text-align: center;
         justify-self: center;
         align-self: center;
         font-size: 15px;
     }
+
     .nosotros__insta {
-        
+
         margin: 0px;
         display: block;
     }
