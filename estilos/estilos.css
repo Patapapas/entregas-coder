@@ -107,7 +107,7 @@ html {
 
 .card-img-top {
     width: 100%;
-    height: 200px; 
+    height: 200px;
     border-top-right-radius: calc(0.25rem - 1px);
 }
 
@@ -131,8 +131,30 @@ html {
 }
 
 .contenido__video {
+    background-color: rgba(252, 213, 206, 0.575);
     grid-area: video;
     margin: 10px;
+}
+
+.contenido h3 {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0px;
+    text-shadow: 3px 3px 3px rgba(252, 213, 206, 100%);
+}
+.btn {
+    box-shadow: 3px 3px 3px rgba(252, 213, 206, 100%);
+    margin: 10px;
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+}
+.btn a{
+    font-size: 20px;
+}
+.contenido button:hover a{
+    color: white;
+
 }
 
 .animate__animated animate__bounce {
