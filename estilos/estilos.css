@@ -224,6 +224,9 @@ html {
 }
 
 /* BODY ARTICULOS */
+.galeria__imagenes img {
+    width:50%; height:auto;
+}
 .galeria__imagenes {
     font-family: CabinetGrotesk-Variable;
 
@@ -245,6 +248,7 @@ html {
     font-size: 15px;
     margin: 10px;
 }
+
 
 
 
