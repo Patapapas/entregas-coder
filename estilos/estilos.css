@@ -142,6 +142,7 @@ html {
     padding: 10px 0px;
     text-shadow: 3px 3px 3px rgba(252, 213, 206, 100%);
 }
+
 .btn {
     box-shadow: 3px 3px 3px rgba(252, 213, 206, 100%);
     margin: 10px;
@@ -149,10 +150,12 @@ html {
     height: 35px;
     font-size: 20px;
 }
-.btn a{
+
+.btn a {
     font-size: 20px;
 }
-.contenido button:hover a{
+
+.contenido button:hover a {
     color: white;
 
 }
@@ -225,24 +228,29 @@ html {
 
 /* BODY ARTICULOS */
 .galeria__imagenes img {
-    width:50%; height:auto;
+    width: 50%;
+    height: auto;
 }
+
 .galeria__imagenes {
     font-family: CabinetGrotesk-Variable;
 
 }
-.galeria__imagenes h1{
+
+.galeria__imagenes h1 {
     text-align: center;
     font-weight: bold;
     text-shadow: 3px 3px 3px rgb(252, 213, 206);
     margin: 10px;
 }
+
 .galeria__imagenes h5 {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
     text-shadow: 3px 3px 3px rgb(252, 213, 206);
 }
+
 .galeria__imagenes {
     text-align: center;
     font-size: 15px;
@@ -253,6 +261,42 @@ html {
 
 
 /* FOOTER */
+
+.footer__index {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(252, 213, 206, 1) 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "redes categorias"
+    ;
+}
+
+.footer__index h3 {
+    font-family: CabinetGrotesk-Variable;
+    margin: 0;
+}
+
+.footer__index a {
+    display: block;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: CabinetGrotesk-Variable;
+}
+
+.footer__index a:hover {
+    color: white;
+}
+
+/* FOOTER 2 */
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 140px;
+    width: 100%;
+}
 
 .footer {
     background: rgb(255, 255, 255);
