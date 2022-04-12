@@ -1,0 +1,236 @@
+.galeria__imagenes {
+  font-family: CabinetGrotesk-Variable;
+  text-align: center;
+  font-size: 15px;
+  margin: 10px; }
+  .galeria__imagenes img {
+    width: 50%;
+    height: auto; }
+  .galeria__imagenes h1 {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #fcd5ce;
+    margin: 10px; }
+  .galeria__imagenes h5 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #fcd5ce; }
+
+@keyframes slide {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+.nosotros {
+  margin: 10px;
+  font-family: CabinetGrotesk-Variable;
+  display: flex; }
+  .nosotros .nosotros__texto {
+    justify-self: center;
+    align-self: center;
+    font-size: 25px;
+    text-align: center;
+    overflow: hidden;
+    /* ANIMACION */
+    animation-duration: 3s;
+    animation-name: slide; }
+
+.nosotros__textoDos {
+  margin: 10px;
+  font-family: CabinetGrotesk-Variable;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  font-size: 30px;
+  /* ANIMACION */
+  animation-duration: 3s;
+  animation-name: slide; }
+
+.talla {
+  font-family: CabinetGrotesk-Variable;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #fcd5ce; }
+
+.tabla {
+  font-family: CabinetGrotesk-Variable;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 5px;
+  background: #fcd5ce;
+  background: radial-gradient(circle, #fcd5ce 0%, white 50%, #fcd5ce 100%);
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .tabla td,
+  .tabla th {
+    text-shadow: 3px 3px 3px #fcd5ce;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    padding: 20px; }
+  .tabla th {
+    font-size: 15px;
+    font-weight: bold; }
+  .tabla td {
+    font-size: 15px;
+    flex-wrap: wrap; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+@font-face {
+  font-family: 'CabinetGrotesk-Variable';
+  src: url("../fonts/CabinetGrotesk-Variable.woff2") format("woff2"), url("../fonts/CabinetGrotesk-Variable.woff") format("woff"), url("../fonts/CabinetGrotesk-Variable.ttf") format("truetype"); }
+
+.header {
+  background: white;
+  background: linear-gradient(0deg, white 0%, #fcd5ce 100%);
+  display: grid;
+  grid-template-columns: .25fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo menu"; }
+  .header .logo {
+    grid-area: logo;
+    margin: 20px 10px;
+    width: 100px; }
+  .header .navegacion {
+    padding-right: 50px;
+    grid-area: menu;
+    display: inline;
+    justify-self: end;
+    align-self: center; }
+  .header li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px 10px;
+    font-family: CabinetGrotesk-Variable; }
+  .header a {
+    text-decoration: none;
+    color: black; }
+    .header a:hover {
+      color: white; }
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .carousel-item .card-columns .card {
+    display: inline-block;
+    width: 100%; }
+  .carousel-item .card-img-top {
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: calc(0.25rem - 1px); }
+
+.contenido {
+  text-align: center;
+  font-family: CabinetGrotesk-Variable;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .4fr 1fr 1fr;
+  grid-template-areas: "video" "mujer" "hombre"; }
+  .contenido a {
+    color: black;
+    font-family: CabinetGrotesk-Variable;
+    text-decoration: none; }
+  .contenido h3 {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0px;
+    text-shadow: 3px 3px 3px #fcd5ce; }
+  .contenido .contenido__video {
+    background-color: rgba(252, 213, 206, 0.575);
+    grid-area: video;
+    margin: 10px; }
+  .contenido .btn {
+    box-shadow: 3px 3px 3px #fcd5ce;
+    margin: 10px;
+    width: 100px;
+    height: 35px;
+    font-size: 20px; }
+    .contenido .btn a {
+      font-size: 20px; }
+  .contenido .contenido__mujeres {
+    margin: 10px;
+    grid-area: mujer;
+    font-size: 20px; }
+    .contenido .contenido__mujeres i {
+      display: inline; }
+  .contenido .contenido__hombres {
+    margin: 10px;
+    font-size: 20px; }
+    .contenido .contenido__hombres li {
+      display: inline; }
+
+.footer__index {
+  text-decoration: none;
+  background: white;
+  background: linear-gradient(180deg, white 0%, #fcd5ce 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "redes categorias"; }
+  .footer__index h3 {
+    font-family: CabinetGrotesk-Variable;
+    margin: 0; }
+  .footer__index a {
+    display: block;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: CabinetGrotesk-Variable; }
+    .footer__index a:hover {
+      color: white; }
+
+.footer {
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background: white;
+  background: linear-gradient(180deg, white 0%, #fcd5ce 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "redes categorias"; }
+  .footer a {
+    display: block;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: CabinetGrotesk-Variable; }
+    .footer a:hover {
+      color: white; }
+    .footer a .footer__menu {
+      grid-area: categorias;
+      padding-left: 15px;
+      font-family: CabinetGrotesk-Variable;
+      font-size: 20px; }
+    .footer a .footer__submenu {
+      list-style: none; }
+    .footer a .footer__redes {
+      grid-area: redes;
+      padding-left: 15px;
+      font-size: 20px;
+      color: black;
+      font-family: CabinetGrotesk-Variable; }
+      .footer a .footer__redes a {
+        padding: 1px 0px;
+        font-size: 15px; }
+      .footer a .footer__redes h3 {
+        font-family: CabinetGrotesk-Variable;
+        margin: 0; }
