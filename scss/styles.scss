@@ -125,23 +125,38 @@ html {
         }
     }
 
-    .contenido__mujeres {
-        margin: 10px;
-        grid-area: mujer;
-        font-size: 20px;
+    
+    // MAPS
 
-        i {
-            display: inline;
+    $estilos: (
+    grid1: mujer,
+    grid2: hombre,
+    );
+
+    $contenido: (
+        contenido__hombres
+        contenido__mujeres
+    );
+
+    @each $cont in $contenido {
+        #{$cont}{
+            margin: 10px;
+            font-size: 20px;
+
+            li{
+                display: inline;
+            }
         }
     }
-    .contenido__hombres {
-        margin: 10px;
-        font-size: 20px;
 
-        li {
-            display: inline;
-        }
+    .contenido contenido__hombres{
+        grid-area: map-get($estilos, grid2);
     }
+    .contenido contenido__mujeres{
+        grid-area: map-get($estilos, grid1);
+    }
+    
+
 }
 
 .footer__index {

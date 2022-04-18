@@ -13,9 +13,9 @@
     margin: 10px; }
   .galeria__imagenes h5 {
     text-align: center;
-    font-size: 20px;
     font-weight: bold;
-    text-shadow: 3px 3px 3px #fcd5ce; }
+    text-shadow: 3px 3px 3px #fcd5ce;
+    font-size: 20px; }
 
 @keyframes slide {
   from {
@@ -32,19 +32,20 @@
   .nosotros .nosotros__texto {
     justify-self: center;
     align-self: center;
-    font-size: 25px;
     text-align: center;
+    font-family: CabinetGrotesk-Variable;
+    font-size: 25px;
     overflow: hidden;
     /* ANIMACION */
     animation-duration: 3s;
     animation-name: slide; }
 
 .nosotros__textoDos {
-  margin: 10px;
-  font-family: CabinetGrotesk-Variable;
-  text-align: center;
   justify-self: center;
   align-self: center;
+  text-align: center;
+  font-family: CabinetGrotesk-Variable;
+  margin: 10px;
   font-size: 30px;
   /* ANIMACION */
   animation-duration: 3s;
@@ -163,17 +164,20 @@ html {
     font-size: 20px; }
     .contenido .btn a {
       font-size: 20px; }
-  .contenido .contenido__mujeres {
-    margin: 10px;
-    grid-area: mujer;
-    font-size: 20px; }
-    .contenido .contenido__mujeres i {
-      display: inline; }
-  .contenido .contenido__hombres {
+  .contenido contenido__hombres {
     margin: 10px;
     font-size: 20px; }
-    .contenido .contenido__hombres li {
+    .contenido contenido__hombres li {
       display: inline; }
+  .contenido contenido__mujeres {
+    margin: 10px;
+    font-size: 20px; }
+    .contenido contenido__mujeres li {
+      display: inline; }
+  .contenido .contenido contenido__hombres {
+    grid-area: hombre; }
+  .contenido .contenido contenido__mujeres {
+    grid-area: mujer; }
 
 .footer__index {
   text-decoration: none;
