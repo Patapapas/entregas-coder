@@ -1,6 +1,7 @@
 @import "articulos";
 @import "nosotros";
 @import "tallas";
+@import "contacto";
 
 
 
@@ -150,13 +151,16 @@ html {
     }
 
     .contenido contenido__hombres{
+        margin: 10px;
+        background-color: rgba(252, 213, 206, 0.671);
         grid-area: map-get($estilos, grid2);
     }
     .contenido contenido__mujeres{
+        margin: 10px;
+        background-color: rgba(252, 213, 206, 0.671);
         grid-area: map-get($estilos, grid1);
     }
     
-
 }
 
 .footer__index {
