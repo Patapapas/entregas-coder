@@ -1,60 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>NicEly Contacto</title>
-    <meta name="keywords" content="JOYERIA, JOYAS, NICE, NICELEY, COLLAR, ARETES, PULSERA, JOYERIA HOMBRES, JOYERIA MUJERES, CADENAS, DIJES">
+    <meta name="keywords"
+        content="JOYERIA, JOYAS, NICE, NICELEY, COLLAR, ARETES, PULSERA, JOYERIA HOMBRES, JOYERIA MUJERES, CADENAS, DIJES">
     <meta name="description" content="Ponte en contacto con nosotros para hacer tu pedido.">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagenes/Logo/ICONO.ico">
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../estilos/styles.css">
     <link rel="stylesheet" href="../estilos/css/bootstrap-grid.min.css">
     <script src="../js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <header class="header">
         <a href="../index.html"><img src="../imagenes/Logo/LOGO.png" alt="logo_NiceEly" class="logo"></a>
         <nav class="navegacion">
             <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../paginas/mujeres.html">Mujeres</a></li>
                 <li><a href="../paginas/hombres.html">Hombres</a></li>
                 <li><a href="../paginas/nosotros.html">Nosotros</a></li>
                 <li><a href="../paginas/contacto.html">Contacto</a></li>
+                <li><a href="../paginas/tallas.html">Tallas</a></li>
             </ul>
         </nav>
     </header>
     <div>
-        <h1>CONTACTO</h1>
-    </div>
-    <form action="#">
-    <input type="text" placeholder="Nombre" name="Nombre">
-    <br><br>
-    <input type="email" name="email" id="" placeholder="Correo">
-    <br><br>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Reiniciar">
-        
+        <div class="contacto">
 
-    </form>
-    <footer class="footer">
-        <div class="footer__redes">
-            <h3>Redes</h3>
-            <a href="https://www.facebook.com/nicelyjewelry">Facebook</a>
-            <a href="https://www.instagram.com/nicelyjewelry/?hl=en">Instagram</a>
+            <div class="formulario">
+                <h1>Formulario de contacto</h1>
+                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+                    <p>
+                        <label class="colocar_nombre">Nombre</label>
+                        <input type="name" name="introducir_nombre" placeholder="Escribe tu nombre">
+                    </p>
+                    <p>
+                        <label class="colocar_email">Email</label>
+                        <input type="email" name="introducir_email" id="email"
+                            placeholder="Escribe tu Email">
+                    </p>
+                    <p>
+                        <label class="colocar_telefono">Teléfono
+                        </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>
+                    <button type="submit" name="enviar_formulario" id="enviar">
+                        <p>Enviar</p>
+                    </button>
+                </form>
+            </div>
         </div>
-        <div class="footer__menu">
-            <nav>
-                <h3>Categorias</h3>
-                <ul class="footer__submenu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../paginas/mujeres.html">Mujeres</a></li>
-                    <li><a href="../paginas/hombres.html">Hombres</a></li>
-                    <li><a href="../paginas/nosotros.html">Nosotros</a></li>
-                    <li><a href="../paginas/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+        <footer class="footer__index">
+            <div class="footer__redes">
+                <h3>Redes</h3>
+                <a href="https://www.facebook.com/nicelyjewelry">Facebook</a>
+                <a href="https://www.instagram.com/nicelyjewelry/?hl=en">Instagram</a>
+            </div>
+            <div class="footer__menu">
+                <nav>
+                    <h3>Categorias</h3>
+                    <ul class="footer__submenu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../paginas/mujeres.html">Mujeres</a></li>
+                        <li><a href="../paginas/hombres.html">Hombres</a></li>
+                        <li><a href="../paginas/nosotros.html">Nosotros</a></li>
+                        <li><a href="../paginas/contacto.html">Contacto</a></li>
+                        <li><a href="../paginas/tallas.html">Tallas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
 </body>
+
 </html>
