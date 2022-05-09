@@ -1,7 +1,7 @@
 @import "articulos";
 @import "nosotros";
-@import "tallas";
 @import "contacto";
+@import "media";
 
 
 
@@ -20,47 +20,94 @@ html {
         url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
 }
 
-.header {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(252, 213, 206, 1) 100%);
-    display: grid;
-    grid-template-columns: .25fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "logo menu"
-    ;
+// MENU
+.header__menu {
+    font-family: CabinetGrotesk-Variable;
+    background: rgb(252,213,206);
+    background: linear-gradient(0deg, rgba(252,213,206,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 42%, rgba(252,213,206,1) 100%);
+    height: 80px;
+    width: 100%;
 
-    .logo {
-        grid-area: logo;
-        margin: 20px 10px;
+    label img{
         width: 100px;
+        height: auto;
+    } 
+}
+
+.header nav ul{
+    float: right;
+    margin-top: 25px;
+}
+.header nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.header nav ul li a{
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    text-decoration: none;
+
+    &:hover {
+        color: white;
     }
+}
 
-    .navegacion {
-        padding-right: 50px;
-        grid-area: menu;
-        display: inline;
-        justify-self: end;
-        align-self: center;
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        padding-left: 30px;
     }
-
-    li {
-        display: inline-block;
-        font-size: 20px;
-        padding: 0px 10px;
-        font-family: CabinetGrotesk-Variable;
+    nav ul li a{
+        font-size: 16px;
     }
+}
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+    }
+    
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: rgba($color: #fcd5ce, $alpha: .9);
+        top: 80px;
+        left: -100%;
+        text-align: center;
 
-    a {
-        text-decoration: none;
-        color: black;
-
-        &:hover {
-            color: white;
+        li{
+            display: block;
+            margin: 50px;
+            line-height: 30px;
+    
+            a{
+                font-size: 20px;
+                &:hover{
+                    color: white;
+                }
+            }
         }
     }
-
+    #check:checked ~ ul {
+        left: 0;
+    }
 }
+// --
 
 .carousel-item {
     height: 65vh;
@@ -163,81 +210,156 @@ html {
     
 }
 
-.footer__index {
-    text-decoration: none;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(252, 213, 206, 1) 100%);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "redes categorias"
-    ;
+// .footer__index {
+//     text-decoration: none;
+//     background: rgb(255, 255, 255);
+//     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(252, 213, 206, 1) 100%);
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: 1fr;
+//     grid-template-areas:
+//         "redes categorias"
+//     ;
 
-    h3 {
-        font-family: CabinetGrotesk-Variable;
-        margin: 0;
-    }
+//     h3 {
+//         font-family: CabinetGrotesk-Variable;
+//         margin: 0;
+//     }
 
-    a {
-        display: block;
-        color: black;
-        font-size: 15px;
-        text-decoration: none;
-        font-family: CabinetGrotesk-Variable;
-        &:hover{
-            color: white;
-        }
-    }
-}
-.footer {
-    text-decoration: none;
-    position: absolute;
-    bottom: 0;
-    height: 150px;
+//     a {
+//         display: block;
+//         color: black;
+//         font-size: 15px;
+//         text-decoration: none;
+//         font-family: CabinetGrotesk-Variable;
+//         &:hover{
+//             color: white;
+//         }
+//     }
+// }
+// .footer {
+//     text-decoration: none;
+//     position: absolute;
+//     bottom: 0;
+//     height: 150px;
+//     width: 100%;
+//     background: rgb(255, 255, 255);
+//     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(252, 213, 206, 1) 100%);
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: 1fr;
+//     grid-template-areas:
+//         "redes categorias"
+//     ;
+//     a {
+//         display: block;
+//         color: black;
+//         font-size: 15px;
+//         text-decoration: none;
+//         font-family: CabinetGrotesk-Variable;
+//         &:hover {
+//             color: white;
+//         }
+//     .footer__menu {
+//         grid-area: categorias;
+//         padding-left: 15px;
+//         font-family: CabinetGrotesk-Variable;
+//         font-size: 20px;
+//     }
+    
+//     .footer__submenu {
+//         list-style: none;
+//     }
+//     .footer__redes {
+//         grid-area: redes;
+//         padding-left: 15px;
+//         font-size: 20px;
+//         color: black;
+//         font-family: CabinetGrotesk-Variable;
+        
+//         a {
+//             padding: 1px 0px;
+//             font-size: 15px;
+//         }
+//         h3 {
+//             font-family: CabinetGrotesk-Variable;
+//             margin: 0;
+//         }
+//     }
+//     }
+// }
+
+.piePagina{
     width: 100%;
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(252, 213, 206, 1) 100%);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "redes categorias"
-    ;
-    a {
-        display: block;
-        color: black;
-        font-size: 15px;
-        text-decoration: none;
-        font-family: CabinetGrotesk-Variable;
-        &:hover {
-            color: white;
-        }
-    .footer__menu {
-        grid-area: categorias;
-        padding-left: 15px;
-        font-family: CabinetGrotesk-Variable;
-        font-size: 20px;
-    }
-    
-    .footer__submenu {
-        list-style: none;
-    }
-    .footer__redes {
-        grid-area: redes;
-        padding-left: 15px;
-        font-size: 20px;
-        color: black;
-        font-family: CabinetGrotesk-Variable;
+    font-family: CabinetGrotesk-Variable;
+}
+.piePagina__logo{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+
+    .box{
+
+        figure{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 250px;
+            }
         
-        a {
-            padding: 1px 0px;
-            font-size: 15px;
-        }
-        h3 {
-            font-family: CabinetGrotesk-Variable;
-            margin: 0;
+            h2{
+                color: #fff;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+            p{
+                color: #efefef;
+                margin-bottom: 10px;
+            }
         }
     }
+
+}
+
+.piePagina__redes{
+    a{
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        margin-right: 10px;
+        background-color: black;
+        text-align: center;
+
+        &:hover{
+            color: white
+        }
     }
 }
+
+.piePagina__menu {
+    list-style: none;
+
+    li a{
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+
+        &:hover{
+            color: white
+        }
+    }
+}
+
